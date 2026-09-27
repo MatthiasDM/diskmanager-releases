@@ -36,6 +36,15 @@
   .feature { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
   .feature h3 { margin: 0 0 6px; font-size: 1.05rem; }
   .feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .support-card {
+    margin-top: 40px; padding: 28px; border-radius: 20px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+    background: linear-gradient(135deg, rgba(224,69,123,.12), rgba(255,149,0,.10)); border: 1px solid rgba(224,69,123,.25);
+  }
+  .support-card .cup { font-size: 44px; line-height: 1; }
+  .support-card .text { flex: 1 1 280px; }
+  .support-card h2 { margin: 0 0 6px; font-size: 1.3rem; }
+  .support-card p { margin: 0; color: var(--muted); }
+  .btn.kofi { background: var(--pink); color: #fff; border: 0; }
   footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 56px; }
   footer a { color: inherit; }
 </style>
@@ -48,7 +57,7 @@
     <p class="tagline">Reclaim space on a small Mac SSD: developer caches, Docker, project junk and forgotten large files.</p>
     <div class="actions">
       <a class="btn primary" href="https://github.com/MatthiasDM/diskmanager-releases/releases">First release coming soon</a>
-      
+      <a class="btn support" href="https://ko-fi.com/matthiasdm">♥ Support</a>
     </div>
     <p class="meta">Free · macOS 14 Sonoma or later · Apple silicon &amp; Intel · Notarized by Apple</p>
   </header>
@@ -60,6 +69,16 @@
     <div class="feature"><h3>Space Explorer</h3><p>A fast, clickable treemap of your disk. Trash, delete or move items to an external drive.</p></div>
     <div class="feature"><h3>Large Files</h3><p>Every file over 50 MB, sortable by size and age.</p></div>
     <div class="feature"><h3>Menu bar</h3><p>Free space at a glance, with automatic updates.</p></div>
+  </section>
+
+  <section class="support-card">
+    <div class="cup">☕</div>
+    <div class="text">
+      <h2>Enjoying Disk Manager?</h2>
+      <p>Disk Manager is free and made by one developer in their spare time. If you like it and find it useful,
+      please consider a small donation. It really helps keep it going and improving. Thank you!</p>
+    </div>
+    <a class="btn kofi" href="https://ko-fi.com/matthiasdm">♥ Support on Ko-fi</a>
   </section>
 
   <footer>
