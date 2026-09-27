@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disk Manager for Mac</title>
+<meta name="description" content="Reclaim space on small Mac SSDs: caches, Docker, project junk and large files.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f6f7fb; --card: #ffffff; --text: #16181d; --muted: #5d6472; --border: #e3e6ee;
+    --accent: #3b6cf6; --accent-2: #7a45ef; --pink: #e0457b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --card: #171a21; --text: #eef0f4; --muted: #9aa3b2; --border: #262b35; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 72px 16px 48px; }
+  header { text-align: center; }
+  header img { width: 128px; height: 128px; }
+  h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 12px 0 8px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); font-size: 1.2rem; max-width: 560px; margin: 0 auto; }
+  .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 32px 0 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 12px;
+    font-weight: 600; text-decoration: none; border: 1px solid var(--border); color: var(--text); background: var(--card);
+  }
+  .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border: 0; }
+  .btn.support { color: var(--pink); }
+  .meta { text-align: center; color: var(--muted); font-size: 0.9rem; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 56px; }
+  .feature { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+  .feature h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 56px; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Disk Manager</h1>
+    <p class="tagline">Reclaim space on a small Mac SSD: developer caches, Docker, project junk and forgotten large files.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/MatthiasDM/diskmanager-releases/releases">First release coming soon</a>
+      
+    </div>
+    <p class="meta">Free · macOS 14 Sonoma or later · Apple silicon &amp; Intel · Notarized by Apple</p>
+  </header>
+
+  <section class="features">
+    <div class="feature"><h3>Smart Cleanup</h3><p>Xcode DerivedData, simulators, npm, pip, Gradle, Homebrew and ~30 more caches, labelled safe or caution.</p></div>
+    <div class="feature"><h3>Docker</h3><p>See what OrbStack or Docker Desktop really uses, where its disk image lives, and prune in one click.</p></div>
+    <div class="feature"><h3>Project Junk</h3><p>Find node_modules, venvs, Pods and build folders in projects you haven't touched in weeks.</p></div>
+    <div class="feature"><h3>Space Explorer</h3><p>A fast, clickable treemap of your disk. Trash, delete or move items to an external drive.</p></div>
+    <div class="feature"><h3>Large Files</h3><p>Every file over 50 MB, sortable by size and age.</p></div>
+    <div class="feature"><h3>Menu bar</h3><p>Free space at a glance, with automatic updates.</p></div>
+  </section>
+
+  <footer>
+    <p><a href="https://github.com/MatthiasDM/diskmanager-releases/releases">All releases</a></p>
+  </footer>
+</main>
+</body>
+</html>
