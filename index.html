@@ -45,6 +45,10 @@
   .support-card h2 { margin: 0 0 6px; font-size: 1.3rem; }
   .support-card p { margin: 0; color: var(--muted); }
   .btn.kofi { background: var(--pink); color: #fff; border: 0; }
+  .preview-note {
+    max-width: 640px; margin: 20px auto 0; padding: 14px 18px; border-radius: 12px; text-align: left; font-size: 0.92rem;
+    background: rgba(255,149,0,.12); border: 1px solid rgba(255,149,0,.35); color: var(--text);
+  }
   footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 56px; }
   footer a { color: inherit; }
 </style>
@@ -56,10 +60,15 @@
     <h1>Disk Manager</h1>
     <p class="tagline">Reclaim space on a small Mac SSD: developer caches, Docker, project junk and forgotten large files.</p>
     <div class="actions">
-      <a class="btn primary" href="https://github.com/MatthiasDM/diskmanager-releases/releases">First release coming soon</a>
+      <a class="btn primary" href="https://github.com/MatthiasDM/diskmanager-releases/releases/download/v1.0.0/DiskManager-1.0.0.dmg">Download 1.0.0</a>
       <a class="btn support" href="https://ko-fi.com/matthiasdm">♥ Support</a>
     </div>
-    <p class="meta">Free · macOS 14 Sonoma or later · Apple silicon &amp; Intel · Notarized by Apple</p>
+    <p class="meta">Free · macOS 14 Sonoma or later · Apple silicon &amp; Intel · Preview build</p>
+    <div class="preview-note">
+      <strong>Preview build:</strong> this version isn't notarized by Apple yet, so macOS will block it the first time.
+      After dragging it to Applications and trying to open it, go to <em>System Settings → Privacy &amp; Security</em>,
+      scroll down and click <em>Open Anyway</em>. Future versions will update automatically from inside the app.
+    </div>
   </header>
 
   <section class="features">

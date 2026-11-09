@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Disk Manager</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Mon, 09 Nov 2026 14:58:57 +0100</pubDate>
+            <link>https://matthiasdm.github.io/diskmanager-releases/</link>
+            <sparkle:version>202611091458</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Disk Manager 1.0.0 — first preview</h2>
+<p>A native macOS app to reclaim space on small SSDs.</p>
+<ul>
+  <li><b>Smart Cleanup</b>: ~30 developer and app caches (Xcode, simulators, npm, pip/uv, Gradle, Homebrew, CocoaPods, Flutter, Go, Cargo…), labelled safe or caution.</li>
+  <li><b>Docker</b>: OrbStack, Docker Desktop and Colima. Shows where the engine's disk image lives, what's reclaimable, and prunes in one click.</li>
+  <li><b>Project Junk</b>: finds node_modules, venvs, Pods, .dart_tool and build folders, and selects those untouched for 30+ days.</li>
+  <li><b>Space Explorer</b>: clickable treemap with Trash, Delete and Move to… (e.g. an external drive).</li>
+  <li><b>Large Files</b>: every file over 50 MB, sortable and filterable.</li>
+  <li><b>Menu bar</b>: free space at a glance.</li>
+</ul>
+<p><b>Preview build:</b> not yet notarized by Apple. After moving the app to Applications and trying to open it once, go to System Settings → Privacy &amp; Security and click <i>Open Anyway</i>.</p>
+<p>Requires macOS 14 Sonoma or later. Apple silicon and Intel.</p>
+]]></description>
+            <enclosure url="https://github.com/MatthiasDM/diskmanager-releases/releases/download/v1.0.0/DiskManager-1.0.0.dmg" length="3489770" type="application/octet-stream" sparkle:edSignature="42txdic0eV69lOw3oxpncACokXhoO0XleF08G0O02eU6wcRatQFTCR4ENsr+CqM4wotwCVNzJS9z4bfWNNeECw=="/>
+        </item>
+    </channel>
+</rss>
